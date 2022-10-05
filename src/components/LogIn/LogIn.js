@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
+// import React, { useState } from 'react';
+// import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import { useNavigate } from 'react-router-dom';
 import leftImg from '../../img/img-edited.jpg';
 import './LogIn.css'
+// import ModeFeature from '../ModeFeature/ModeFeature';
 
-const LogIn = () => {
-    const [mode, setMode] = useState(false);
+const LogIn = (props) => {
+    const mode = props.mode;
+    // const [mode, setMode] = useState(false);
     const navigate = useNavigate();
 
     const handleSigninBtn = () => {
@@ -19,7 +21,8 @@ const LogIn = () => {
             <div id={`${mode ? 'right-portion-light-mode' : 'right-portion-dark-mode'}`} className='lg:w-3/4 lg:h-screen pb-24 flex flex-col  justify-evenly lg:items-start  lg:px-24 px-5 rounded-lg'>
                 <div className='mt-5'>
                     {
-                        mode ? <MoonIcon onClick={() => setMode(!mode)} className="h-6 w-10 text-white font-bold text-2xl" /> : <SunIcon onClick={() => setMode(!mode)} className="h-6 w-10 text-white font-bold text-2xl" />
+                        // mode ? <MoonIcon onClick={() => setMode(!mode)} className="h-6 w-10 text-white font-bold text-2xl" /> : <SunIcon onClick={() => setMode(!mode)} className="h-6 w-10 text-white font-bold text-2xl" />
+                        props.changeMode(mode)
                     }
                 </div>
 

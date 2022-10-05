@@ -1,0 +1,22 @@
+/* input {
+    padding: 10px;
+    font-weight: bold;
+} */
+
+/* #registration p,
+#registration h1,
+#resgistration h3 {
+    color: white;
+} */
+#registration {
+    overflow-x: hidden;
+}
+
+#forms-light {
+
+    background-image: linear-gradient(to bottom right, blue, skyblue);
+}
+
+#forms-dark {
+    background-image: linear-gradient(to bottom right, black, gray);
+}
