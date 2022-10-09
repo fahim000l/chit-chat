@@ -37,8 +37,8 @@ const LogIn = (props) => {
                 <hr className='border-solid border-2 w-full' />
                 <div className='flex flex-col w-full lg:mt-0 mt-10 lg:items-start justify-evenly'>
 
-                    <input className='p-3 lg:mb-5 mb-2 lg:w-4/5 font-bold border-solid border-2 border-black rounded-md' type="text" placeholder='Email/Phone Number' />
-                    <input className='p-3 lg:my-5 mb-2 mt-2 lg:w-4/5 font-bold border-solid border-2 border-black rounded-md' type="password" placeholder='Password' />
+                    <input id='email-input-field' className='p-3 lg:mb-5 mb-2 lg:w-4/5 font-bold border-solid border-2 border-black rounded-md' type="text" placeholder='Email/Phone Number' />
+                    <input id='email-input-field' className='p-3 lg:my-5 mb-2 mt-2 lg:w-4/5 font-bold border-solid border-2 border-black rounded-md' type="password" placeholder='Password' />
                     <button className={`text-2xl mt-2 font-bold p-3 text-white  border-solid border-2 rounded-lg w-full lg:w-1/4 hover:bg-blue-500 hover:text-black ${mode ? 'bg-purple-500' : 'bg-gray-900'}`}>Log In</button>
                 </div>
             </div>
