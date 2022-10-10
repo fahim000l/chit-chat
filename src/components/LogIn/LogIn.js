@@ -5,8 +5,8 @@ import leftImg from '../../img/img-edited.jpg';
 import './LogIn.css'
 // import ModeFeature from '../ModeFeature/ModeFeature';
 
-const LogIn = (props) => {
-    const mode = props.mode;
+const LogIn = ({ mode, changeMode }) => {
+    // const mode = props.mode;
     // const [mode, setMode] = useState(false);
     const navigate = useNavigate();
 
@@ -19,10 +19,10 @@ const LogIn = (props) => {
                 <img className='w-full lg:h-screen bg-blue-700' src={leftImg} alt="" />
             </div>
             <div id={`${mode ? 'right-portion-light-mode' : 'right-portion-dark-mode'}`} className='lg:w-3/4 lg:h-screen pb-24 flex flex-col  justify-evenly lg:items-start  lg:px-24 px-5 rounded-lg'>
-                <div className='mt-5'>
+                <div className={`mt-5 w-1/4 lg:w-auto border-solid border-2 rounded-lg ${mode ? 'pl-10' : 'pr-10'}  py-2`}>
                     {
                         // mode ? <MoonIcon onClick={() => setMode(!mode)} className="h-6 w-10 text-white font-bold text-2xl" /> : <SunIcon onClick={() => setMode(!mode)} className="h-6 w-10 text-white font-bold text-2xl" />
-                        props.changeMode(mode)
+                        changeMode(mode)
                     }
                 </div>
 
