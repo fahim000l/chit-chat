@@ -1,0 +1,15 @@
+.light-mode-bg {
+    background-image: linear-gradient(to bottom right, blue, skyblue);
+}
+
+.dark-mode-bg {
+    background-image: linear-gradient(to bottom right, black, gray);
+}
+
+.light-mode-btn {
+    background-color: purple;
+}
+
+.dark-mode-btn {
+    background-color: darkgray;
+}
